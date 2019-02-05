@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { graphql } from "gatsby";
-import SEO from "../components/page/seo";
-import Template from "../components/layout/template";
-import PageBanner from "../components/banner/page-banner";
-import WebsitesContent from "../components/content/websites";
+import SEO from "../components/SEO";
+import Template from "../components/Template";
+import PageBanner from "../components/PageBanner";
+import WebsitesContent from "../components/WebsitesContent";
 import PostList from "../components/PostList";
 
 class HomePage extends Component {

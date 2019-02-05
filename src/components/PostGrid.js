@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./post-grid.module.scss";
-import PostPreview from "./post-preview";
+import style from "./PostGrid.module.scss";
+import PostPreview from "./PostPreview";
 
 const PostGrid = ({ title, posts }) => {
   return (

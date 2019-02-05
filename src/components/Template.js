@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
 import { slide as Menu } from "react-burger-menu";
-import base from "../../styles/style.scss";
-import Header from "./header";
-import Footer from "./footer";
-import { menuItems } from "../../utils/menuItems";
+import base from "../styles/style.scss";
+import Header from "./Header";
+import Footer from "./Footer";
+import { menuItems } from "../utils/menuItems";
 
 class Template extends React.Component {
   render() {

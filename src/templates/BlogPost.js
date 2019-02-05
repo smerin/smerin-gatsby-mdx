@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
-import SEO from "../components/page/seo";
+import SEO from "../components/SEO";
 import Img from "gatsby-image";
-import Template from "../components/layout/template";
-import style from "./blog-post.module.scss";
+import Template from "../components/Template";
+import style from "./BlogPost.module.scss";
 
 export default function BlogTemplate({ data, location }) {
   const { markdownRemark } = data;

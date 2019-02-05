@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
-import MainMenu from "./main-menu";
-import MobileMenu from "./mobile-menu";
-import style from "./header.module.scss";
+import MainMenu from "./MainMenu";
+import MobileMenu from "./MobileMenu";
+import style from "./Header.module.scss";
 
 const Header = () => {
   return (

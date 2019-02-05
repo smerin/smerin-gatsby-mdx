@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
-import MainMenu from "./main-menu";
-import MobileMenu from "./mobile-menu";
+import MainMenu from "./MainMenu";
+import MobileMenu from "./MobileMenu";
 import {
   EmailButton,
   LinkedinButton,
@@ -9,8 +9,8 @@ import {
   YoutubeButton,
   FacebookButton,
   TwitterButton
-} from "../shared/buttons";
-import style from "./footer.module.scss";
+} from "./Buttons";
+import style from "./Footer.module.scss";
 
 const Footer = ({ hideDigital, hideMusic }) => {
   return (

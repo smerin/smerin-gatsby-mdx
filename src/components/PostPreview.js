@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
-import style from "./post-preview.module.scss";
+import style from "./PostPreview.module.scss";
 
 const PostPreview = ({ post }) => {
   return (

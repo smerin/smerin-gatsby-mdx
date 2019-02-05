@@ -1,12 +1,12 @@
 import React from "react";
 import style from "./WebsitesContent.module.scss";
 import { FaLinkedin, FaEnvelope, FaTwitter } from "react-icons/fa";
-import { EmailButton, LinkedinButton, TwitterButton } from "../shared/buttons";
-import reactIcon from "../../images/icons/react-icon.svg";
-import reduxIcon from "../../images/icons/redux-icon.svg";
-import graphqlIcon from "../../images/icons/graphql-icon.svg";
-import nodeIcon from "../../images/icons/node-icon.svg";
-import uxuiIcon from "../../images/icons/uxui-icon.svg";
+import { EmailButton, LinkedinButton, TwitterButton } from "./Buttons";
+import reactIcon from "../images/icons/react-icon.svg";
+import reduxIcon from "../images/icons/redux-icon.svg";
+import graphqlIcon from "../images/icons/graphql-icon.svg";
+import nodeIcon from "../images/icons/node-icon.svg";
+import uxuiIcon from "../images/icons/uxui-icon.svg";
 
 const WebsitesContent = () => (
   <div className="container">
