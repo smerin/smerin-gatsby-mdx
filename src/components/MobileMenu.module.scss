@@ -1,0 +1,66 @@
+@import "../../styles/utilities";
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: $white;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    flex: 1;
+    margin: 0;
+    border-bottom: 1px solid $dove;
+    font-family: "Domine", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      background: $charcoal;
+      color: $white;
+    }
+  }
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
+}
+
+.mobileMenuToggle {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  width: 4rem;
+  height: 4rem;
+  background: $charcoal;
+  color: $white;
+  border: 0;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
+
+  &:hover {
+    background: $black;
+  }
+}

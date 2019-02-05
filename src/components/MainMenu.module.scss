@@ -1,0 +1,46 @@
+@import "../../styles/utilities";
+
+.mainMenu {
+  display: none;
+  height: 100%;
+  margin: 0;
+
+  @include breakpoint(tablet) {
+    display: block;
+  }
+
+  li {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 1rem;
+    font-family: "Domine", sans-serif;
+
+    @include breakpoint(desktop) {
+      margin: 0 1.5rem;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.navigationToggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4rem;
+  height: 4rem;
+  background: $charcoal;
+  color: $white;
+  border: 0;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
+
+  &:hover {
+    background: $black;
+  }
+}

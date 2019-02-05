@@ -1,0 +1,49 @@
+@import "../../styles/utilities";
+
+.contactSection {
+  position: relative;
+  left: -1rem;
+  width: calc(100% + 2rem);
+  margin: 2em 0 4rem;
+  padding: 2rem 2rem 1rem;
+  background: $plum;
+  color: $white;
+  border-left: 1rem solid darken($plum, 10%);
+
+  p {
+    max-width: 32rem;
+  }
+
+  @include breakpoint(laptop) {
+    left: -2rem;
+    width: calc(100% + 4rem);
+    border-width: 2rem;
+  }
+}
+
+.skillsItem {
+  position: relative;
+  min-height: 6rem;
+  margin: 2rem 0;
+
+  @include breakpoint(desktop) {
+    margin: 3rem 0;
+  }
+
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  img {
+    display: block;
+    width: 6rem;
+    margin: 0 0 1rem;
+
+    @include breakpoint(desktop) {
+      position: absolute;
+      left: -7.5rem;
+      top: -0.75rem;
+      width: 6rem;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../styles/utilities";
+
+.preview {
+  img {
+    transition: all 0.5s ease !important;
+  }
+  a:hover {
+    img {
+      filter: sepia(100%) hue-rotate(160deg) saturate(150%);
+    }
+  }
+}
+
+.previewTitle {
+  margin: 0.5rem 0;
+}
