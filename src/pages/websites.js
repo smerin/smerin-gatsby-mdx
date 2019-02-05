@@ -5,7 +5,7 @@ import Template from "../components/Template";
 import PageBanner from "../components/PageBanner";
 import WebsitesContent from "../components/WebsitesContent";
 
-class DigitalPage extends Component {
+class WebsitesPage extends Component {
   render() {
     const { banner } = this.props.data;
 
@@ -26,7 +26,7 @@ class DigitalPage extends Component {
   }
 }
 
-export default DigitalPage;
+export default WebsitesPage;
 
 export const websitesBannerQuery = graphql`
   query {
