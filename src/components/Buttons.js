@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "gatsby";
 import cx from "classnames";
 import {
+  FaArrowRight,
   FaLinkedin,
   FaEnvelope,
   FaTwitter,
@@ -9,6 +11,20 @@ import {
   FaFacebook
 } from "react-icons/fa";
 import style from "./Buttons.module.scss";
+
+export const LinkButton = ({ alt, url, children }) => {
+  const className = cx(style.button, {
+    [style.alt]: alt
+  });
+  return (
+    <Link className={className} to={url} target="blank">
+      <span className={style.icon}>
+        <FaArrowRight />
+      </span>
+      {children}
+    </Link>
+  );
+};
 
 export const EmailButton = ({ alt }) => {
   const className = cx(style.button, {

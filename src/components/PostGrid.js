@@ -4,15 +4,13 @@ import PostPreview from "./PostPreview";
 
 const PostGrid = ({ title, posts }) => {
   return (
-    <div className="container">
-      <div className={style.postGrid}>
+    <div className={style.postGrid}>
+      <div className="container">
         {title && <h2>{title}</h2>}
         <ul>
-          {posts.map(({ node: post }) => {
-            console.log(post);
-
+          {posts.map(({ node: post }, index) => {
             return (
-              <li key={post.slug}>
+              <li key={index}>
                 <PostPreview post={post} />
               </li>
             );

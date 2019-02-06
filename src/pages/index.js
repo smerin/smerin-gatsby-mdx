@@ -3,8 +3,8 @@ import { graphql } from "gatsby";
 import SEO from "../components/SEO";
 import Template from "../components/Template";
 import PageBanner from "../components/PageBanner";
-import WebsitesContent from "../components/WebsitesContent";
-import PostList from "../components/PostList";
+import KoraFeature from "../components/KoraFeature";
+import PostGrid from "../components/PostGrid";
 
 class HomePage extends Component {
   render() {
@@ -24,7 +24,8 @@ class HomePage extends Component {
           subtitle="I'm George Smerin, web developer and musician from Bristol."
           banner={banner}
         />
-        <PostList posts={posts} />
+        <KoraFeature />
+        <PostGrid posts={posts} title="Latest from the blog" />
       </Template>
     );
   }
@@ -45,9 +46,17 @@ export const homePageQuery = graphql`
       edges {
         node {
           frontmatter {
+            path
             title
             date(formatString: "MMMM DD, YYYY")
             excerpt
+            banner {
+              childImageSharp {
+                fluid(maxWidth: 600) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

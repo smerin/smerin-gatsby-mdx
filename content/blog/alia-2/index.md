@@ -1,9 +1,10 @@
 ---
-path: "/blog/watcha"
-date: "2019-01-16"
-title: "Flipper Dashboard"
-excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
-banner: "watcha-akonting-banner.jpg"
+path: "/blog/alia-2"
+date: "2019-01-15"
+title: "Alia Abene"
+excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+banner: "alia-abene-banner.jpg"
+previewImage: "alia-abene-preview.jpg"
 seoTitle: "SEO title"
 seoDescription: "SEO description"
 ---

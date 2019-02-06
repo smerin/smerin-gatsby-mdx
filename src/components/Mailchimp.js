@@ -33,6 +33,7 @@ class Mailchimp extends Component {
     }
   };
   render() {
+    const { title } = this.props;
     const { email, submitting, msg, result } = this.state;
     const success = result === "success";
     const error = result === "error";
@@ -43,6 +44,7 @@ class Mailchimp extends Component {
     });
     return (
       <div className={style.mailchimp}>
+        {title && <h3>{title}</h3>}
         <form className={style.form} onSubmit={e => this.handleSubmit(e)}>
           <fieldset disabled={submitting}>
             <div className={style.inputs}>

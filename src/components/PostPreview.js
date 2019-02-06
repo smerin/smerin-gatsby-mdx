@@ -1,23 +1,27 @@
 import React from "react";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
+// import { LinkButton } from "./Buttons";
 import style from "./PostPreview.module.scss";
 
 const PostPreview = ({ post }) => {
+  const { path, title, date, excerpt, banner } = post.frontmatter;
+
   return (
     <div className={style.preview}>
-      <Link to={`/blog/${post.slug}`}>
-        <Img alt={post.title} fluid={post.previewImage.fluid} />
+      <Link to={path}>
+        <Img alt={title} fluid={banner.childImageSharp.fluid} />
       </Link>
-      <h3 className={style.previewTitle}>
-        <Link to={`/blog/${post.slug}`}>{post.title}</Link>
-      </h3>
-      <p>{post.publishDate}</p>
-      <p
-        dangerouslySetInnerHTML={{
-          __html: post.description.childMarkdownRemark.html
-        }}
-      />
+      <div className={style.content}>
+        <h3>
+          <Link to={path}>{title}</Link>
+        </h3>
+        <p>{date}</p>
+        <p>{excerpt}</p>
+        {/* <LinkButton className="button" url={path}>
+        Read more
+      </LinkButton> */}
+      </div>
     </div>
   );
 };

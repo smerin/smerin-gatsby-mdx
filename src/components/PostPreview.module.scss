@@ -1,6 +1,10 @@
 @import "../styles/utilities";
 
 .preview {
+  background: $white;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+  height: 100%;
+
   img {
     transition: all 0.5s ease !important;
   }
@@ -11,6 +15,10 @@
   }
 }
 
-.previewTitle {
-  margin: 0.5rem 0;
+.content {
+  padding: 0.5rem 1rem 1rem;
+
+  h3 {
+    margin: 0.5rem 0;
+  }
 }

@@ -1,7 +1,15 @@
 @import "../styles/utilities";
 
 .postGrid {
-  padding: 2rem 0;
+  padding: 2rem 0 4rem;
+  background: $plum;
+
+  h2 {
+    color: $white;
+    text-align: center;
+    margin: 1rem 0 2rem;
+    font-size: 3rem;
+  }
 
   ul {
     margin: 0;
