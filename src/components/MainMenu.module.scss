@@ -14,11 +14,19 @@
     align-items: center;
     height: 100%;
     margin: 0 1rem;
-    font-family: "Domine", sans-serif;
+    font-family: $serif;
+    font-weight: 700;
 
     @include breakpoint(desktop) {
       margin: 0 1.5rem;
-      font-size: 1.25rem;
+    }
+
+    a {
+      color: $charcoal;
+
+      &:hover {
+        color: $turquoise;
+      }
     }
   }
 }

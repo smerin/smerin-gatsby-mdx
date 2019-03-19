@@ -4,7 +4,7 @@ import SEO from "../components/SEO";
 import Template from "../components/Template";
 import PageBanner from "../components/PageBanner";
 import KoraFeature from "../components/KoraFeature";
-import PostGrid from "../components/PostGrid";
+import PostList from "../components/PostList";
 
 class HomePage extends Component {
   render() {
@@ -19,13 +19,11 @@ class HomePage extends Component {
           title="George Smerin | Musician and web developer"
           description="I'm George Smerin, web developer and musician from Bristol."
         />
-        <PageBanner
-          title="George Smerin"
-          subtitle="I'm a musician and web developer from Bristol, UK."
-          banner={banner}
-        />
-        {/* <KoraFeature /> */}
-        <PostGrid posts={posts} title="Latest from the blog" />
+        <div className="container">
+          <div className="content">
+            <PostList posts={posts} title="Latest from the blog" />
+          </div>
+        </div>
       </Template>
     );
   }
@@ -50,7 +48,7 @@ export const homePageQuery = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             excerpt
-            previewImage {
+            banner {
               childImageSharp {
                 fluid(maxWidth: 600) {
                   ...GatsbyImageSharpFluid

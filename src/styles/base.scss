@@ -1,20 +1,23 @@
 @import "./utilities";
 
-body {
-  color: $charcoal;
-  background: $white;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-img {
-  // display: block;
-  // width: 100%;
+body {
+  background: $white;
+  color: $charcoal;
+  margin: 0;
 }
 
 a {
   color: $turquoise;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
@@ -55,68 +58,4 @@ section {
 
 .center {
   text-align: center;
-}
-
-/* Styling for mobile menu */
-.bm-burger-button {
-  position: fixed;
-  width: 2rem;
-  height: 1.5rem;
-  right: 1.25rem;
-  top: 1.25rem;
-
-  @include breakpoint(tablet) {
-    display: none;
-  }
-
-  &:hover {
-    .bm-burger-bars {
-      background: $turquoise;
-    }
-  }
-}
-.bm-burger-bars {
-  background: $charcoal;
-  opacity: 1 !important;
-  transition: all 0.3s ease;
-}
-.bm-cross-button {
-  top: 0.75rem !important;
-  right: 1rem !important;
-  height: 48px !important;
-  width: 48px !important;
-
-  > span {
-    top: 0 !important;
-    right: 26px !important;
-  }
-}
-.bm-cross {
-  background: $white;
-  width: 6px !important;
-  height: 48px !important;
-}
-.bm-menu {
-  background: #373a47;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
-}
-.bm-morph-shape {
-  fill: #373a47;
-}
-.bm-item-list {
-  padding: 0.5rem;
-}
-.bm-item {
-  display: inline-block;
-  padding: 1rem;
-  font-family: $headingFont;
-  color: $white;
-
-  &:hover {
-    color: $ice;
-  }
-}
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
 }

@@ -25,18 +25,26 @@ module.exports = {
         path: `${__dirname}/content/blog`
       }
     },
-    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-embed-youtube",
+            options: {
+              width: 800,
+              height: 450
+            }
+          },
+          "gatsby-remark-responsive-iframe"
+        ]
+      }
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
         path: `${__dirname}/src/images`
-      }
-    },
-    {
-      resolve: "gatsby-plugin-typography",
-      options: {
-        pathToConfigModule: "src/styles/typography"
       }
     },
     {

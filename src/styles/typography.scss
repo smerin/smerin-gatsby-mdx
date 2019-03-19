@@ -1,0 +1,84 @@
+@import "./utilities";
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $sans;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.125em;
+  margin: 3rem 0 2rem;
+}
+h2 {
+  font-size: 3rem;
+  line-height: 1.25em;
+  margin: 3rem 0 1.5rem;
+}
+h3 {
+  font-size: 2rem;
+  line-height: 1.25em;
+  margin: 3rem 0 1.5rem;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  margin: 3rem 0 1.5rem;
+}
+
+hr {
+  margin: 4rem 0 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  margin: 1.5rem 0;
+}
+
+ul,
+ol {
+  margin: 1.5rem 0;
+  padding-left: 2.5rem;
+}
+
+li {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  margin: 0 0 0.5rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+strong {
+  font-weight: 900;
+}
+
+blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+  border-left: 0.5rem solid $turquoise;
+
+  p {
+    font-family: $serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+}

@@ -1,22 +1,25 @@
 import React from "react";
+import { Link } from "gatsby";
+import Img from "gatsby-image";
 import style from "./PostList.module.scss";
 
 const PostList = ({ posts }) => {
   return (
-    <div className="container">
-      <div className="content">
-        {posts.map((post, index) => {
-          const { title, date, excerpt } = post.node.frontmatter;
-          return (
-            <div key={index} className={style.post}>
-              <h2>{title}</h2>
-              <p>{date}</p>
-              <p>{excerpt}</p>
-            </div>
-          );
-        })}
-      </div>
-    </div>
+    <ul className={style.postList}>
+      {posts.map(({ node: post }, index) => {
+        const { path, title, date, excerpt, banner } = post.frontmatter;
+        return (
+          <li key={index} className={style.post}>
+            <Link to={path}>
+              <Img alt={title} fluid={banner.childImageSharp.fluid} />
+            </Link>
+            <h2>{title}</h2>
+            <p>{date}</p>
+            <p>{excerpt}</p>
+          </li>
+        );
+      })}
+    </ul>
   );
 };
 

@@ -5,35 +5,24 @@ import base from "../styles/style.scss";
 import Header from "./Header";
 import Footer from "./Footer";
 import { menuItems } from "../utils/menuItems";
+import "typeface-merriweather";
+import "typeface-muli";
 
-class Template extends React.Component {
-  render() {
-    const { location, children } = this.props;
-    let header;
-
-    let rootPath = "/";
-    if (typeof __PREFIX_PATHS__ !== "undefined" && __PREFIX_PATHS__) {
-      rootPath = __PATH_PREFIX__ + "/";
-    }
-
-    const hideMusic = location.pathname === "/websites";
-    const hideDigital = location.pathname === "/music";
-
-    return (
-      <div>
-        <Menu width={300} right>
-          {menuItems.map((item, index) => (
-            <Link key={index} to={item.path}>
-              {item.title}
-            </Link>
-          ))}
-        </Menu>
-        <Header />
-        {children}
-        <Footer hideDigital={hideDigital} hideMusic={hideMusic} />
-      </div>
-    );
-  }
-}
+const Template = ({ children }) => {
+  return (
+    <div>
+      <Menu width={300} right>
+        {menuItems.map((item, index) => (
+          <Link key={index} to={item.path}>
+            {item.title}
+          </Link>
+        ))}
+      </Menu>
+      <Header />
+      {children}
+      <Footer />
+    </div>
+  );
+};
 
 export default Template;

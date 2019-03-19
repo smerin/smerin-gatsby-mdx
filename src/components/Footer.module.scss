@@ -2,7 +2,7 @@
 
 .footer {
   min-height: 10rem;
-  padding: 3rem 0 1rem;
+  padding: 2rem 0 1rem;
   background: $charcoal;
   color: $white;
   text-align: center;
@@ -23,6 +23,10 @@
 
 .buttons {
   padding: 1rem 0;
+
+  h3 {
+    margin-top: 0;
+  }
 
   p {
     margin-bottom: 1rem;

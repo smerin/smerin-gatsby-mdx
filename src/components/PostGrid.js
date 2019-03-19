@@ -1,17 +1,59 @@
 import React from "react";
+import { Link, useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 import style from "./PostGrid.module.scss";
-import PostPreview from "./PostPreview";
 
 const PostGrid = ({ title, posts }) => {
+  const defaultPreviewImage = useStaticQuery(graphql`
+    query {
+      image: file(relativePath: { eq: "default-preview.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <div className={style.postGrid}>
       <div className="container">
         {title && <h2>{title}</h2>}
         <ul>
-          {posts.map(({ node: post }, index) => {
+          {posts.map((post, index) => {
+            console.log(post);
+
+            const {
+              path,
+              title,
+              date,
+              excerpt,
+              previewImage
+            } = post.node.frontmatter;
+
             return (
-              <li key={index}>
-                <PostPreview post={post} />
+              <li key={index} className={style.post}>
+                <Link to={path}>
+                  {previewImage ? (
+                    <Img
+                      alt={title}
+                      fluid={previewImage.childImageSharp.fluid}
+                    />
+                  ) : (
+                    <Img
+                      alt={title}
+                      fluid={defaultPreviewImage.image.childImageSharp.fluid}
+                    />
+                  )}
+                </Link>
+                <h3>
+                  <Link to={path}>{title}</Link>
+                </h3>
+                <p>{excerpt}</p>
+                {/* <LinkButton className="button" url={path}>
+                    Read more
+                  </LinkButton> */}
               </li>
             );
           })}

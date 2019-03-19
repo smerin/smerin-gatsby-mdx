@@ -1,5 +1,15 @@
 @import "../styles/utilities";
 
-.blogBanner {
+.banner {
   position: relative;
+  min-height: 1rem;
+  max-height: calc(100vh - 16rem);
+  overflow: hidden;
+  background: $turquoise;
+}
+
+.content {
+  max-width: 50rem;
+  margin: 0 auto;
+  margin-bottom: 6rem;
 }

@@ -12,33 +12,28 @@ import {
 } from "./Buttons";
 import style from "./Footer.module.scss";
 
-const Footer = ({ hideDigital, hideMusic }) => {
+const Footer = () => {
   return (
     <footer className={style.footer}>
       <div className="container">
-        <h2>Keep in touch</h2>
-
-        {/* {!hideMusic && (
+        <div className={style.buttons}>
+          <h3>Elsewhere on the web...</h3>
+          <YoutubeButton />
+          {/* <FacebookButton /> */}
+          <InstagramButton />
+          <EmailButton />
+        </div>
+        {/* {!hideDigital && (
           <div className={style.buttons}>
-            <h3>Music videos and updates</h3>
-            <YoutubeButton />
-            <FacebookButton />
-            <InstagramButton />
-          </div>
-        )} */}
-        {!hideDigital && (
-          <div className={style.buttons}>
-            {/* <h3>Web development enquiries</h3> */}
-            <h3>Call me on 07887 868522 or try one of these:</h3>
+            <h3>Web development enquiries</h3>
             <EmailButton />
             <LinkedinButton />
             <TwitterButton />
           </div>
-        )}
+        )} */}
         <div className={style.credits}>
-          This website built with ❤️ in <a href="https://reactjs.org/">React</a>
-          , <a href="https://www.gatsbyjs.org/">Gatsby</a> and{" "}
-          <a href="https://www.contentful.com/">Contentful</a>
+          I built this website in <a href="https://reactjs.org/">React</a> &amp;{" "}
+          <a href="https://www.gatsbyjs.org/">Gatsby</a>
         </div>
       </div>
     </footer>

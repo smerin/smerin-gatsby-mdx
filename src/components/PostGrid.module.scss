@@ -2,10 +2,10 @@
 
 .postGrid {
   padding: 2rem 0 4rem;
-  background: $plum;
+  // background: $plum;
 
   h2 {
-    color: $white;
+    // color: $white;
     text-align: center;
     margin: 1rem 0 2rem;
     font-size: 3rem;
@@ -16,6 +16,17 @@
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 5vmin;
+    grid-gap: 4rem;
+  }
+}
+
+.post {
+  h3 {
+    margin: 1.5rem 0 0.5rem;
+  }
+  p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5em;
   }
 }

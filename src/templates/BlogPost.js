@@ -8,25 +8,26 @@ import style from "./BlogPost.module.scss";
 export default function BlogTemplate({ data, location }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
-  console.log(frontmatter.banner.childImageSharp);
+
+  const { title, date, banner, seoTitle, seoDescription } = frontmatter;
 
   return (
     <Template location={location.pathname}>
       <SEO
-        title={frontmatter.seoTitle}
-        description={frontmatter.seoDescription}
+        title={seoTitle}
+        description={seoDescription}
         pathname={location.pathname}
       />
-      <div className={style.blogBanner}>
-        <Img
-          alt={frontmatter.title}
-          fluid={frontmatter.banner.childImageSharp.fluid}
-        />
+      <div className={style.banner}>
+        {banner && (
+          <div className={style.bannerImage}>
+            <Img alt={title} fluid={banner.childImageSharp.fluid} />
+          </div>
+        )}
       </div>
       <div className="container">
-        <div className="content">
-          <h1>{frontmatter.title}</h1>
-          <h2>{frontmatter.date}</h2>
+        <div className={style.content}>
+          <h1>{title}</h1>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
