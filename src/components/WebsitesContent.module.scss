@@ -1,5 +1,12 @@
 @import "../styles/utilities";
 
+.content {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.title {
+  @include h2;
+}
 .contactSection {
   position: relative;
   left: -1rem;
@@ -12,6 +19,7 @@
 
   p {
     max-width: 32rem;
+    margin-top: 0;
   }
 
   @include breakpoint(laptop) {
@@ -26,7 +34,7 @@
   min-height: 6rem;
   margin: 2rem 0;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     margin: 3rem 0;
   }
 
@@ -39,7 +47,7 @@
     width: 6rem;
     margin: 0 0 1rem;
 
-    @include breakpoint(desktop) {
+    @include breakpoint(laptop) {
       position: absolute;
       left: -7.5rem;
       top: -0.75rem;

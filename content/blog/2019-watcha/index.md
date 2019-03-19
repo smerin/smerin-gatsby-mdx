@@ -1,7 +1,7 @@
 ---
 path: "/blog/watcha"
 date: "2019-01-16"
-title: "Watcha plays akonting"
+title: "Watcha plays Jola akonting and kamele ngoni"
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
 banner: "watcha-banner.jpg"
 previewImage: "watcha-preview.jpg"

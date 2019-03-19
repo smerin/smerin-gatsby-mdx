@@ -10,8 +10,8 @@ import uxuiIcon from "../images/icons/uxui-icon.svg";
 
 const WebsitesContent = () => (
   <div className="container">
-    <div className="content">
-      <h1>
+    <div className={style.content}>
+      <h1 className={style.title}>
         Front-end JavaScript developer from Bristol, specializing in React JS.
       </h1>
       <p>

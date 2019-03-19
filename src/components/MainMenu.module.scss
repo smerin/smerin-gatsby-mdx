@@ -13,19 +13,29 @@
     display: inline-flex;
     align-items: center;
     height: 100%;
-    margin: 0 1rem;
+    margin: 0;
     font-family: $serif;
     font-weight: 700;
 
     @include breakpoint(desktop) {
-      margin: 0 1.5rem;
+      // margin: 0 1.5rem;
     }
 
     a {
+      display: block;
       color: $charcoal;
+      background: transparent;
+      height: 100%;
+      padding: 2.5rem 1.5rem;
+      transition: all 0.5s ease;
 
       &:hover {
-        color: $turquoise;
+        background: $ice;
+      }
+
+      &[aria-current="page"] {
+        background: linear-gradient(to bottom, $turquoise, #1796b0);
+        color: $white;
       }
     }
   }

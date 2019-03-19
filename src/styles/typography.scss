@@ -7,58 +7,39 @@ body {
   font-weight: 300;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $serif;
-  font-weight: 700;
-}
-
 h1 {
-  font-size: 4rem;
-  line-height: 1.125em;
-  margin: 3rem 0 2rem;
+  @include h1;
 }
 h2 {
-  font-size: 3rem;
-  line-height: 1.25em;
-  margin: 3rem 0 1.5rem;
+  @include h2;
 }
 h3 {
-  font-size: 2rem;
-  line-height: 1.25em;
-  margin: 3rem 0 1.5rem;
+  @include h3;
 }
-
 h4,
 h5,
 h6 {
-  font-size: 1.5rem;
-  line-height: 1.5em;
-  margin: 3rem 0 1.5rem;
+  @include h4;
 }
 
 hr {
-  margin: 4rem 0 3rem;
+  margin: 2rem 0;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5em;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 
 ul,
 ol {
-  margin: 1.5rem 0;
-  padding-left: 2.5rem;
+  margin: 1rem 0;
+  padding-left: 2rem;
 }
 
 li {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5em;
   margin: 0 0 0.5rem;
 

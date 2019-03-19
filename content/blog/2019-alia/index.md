@@ -1,7 +1,7 @@
 ---
 path: "/blog/alia"
 date: "2019-01-18"
-title: "Alia Abene"
+title: "Alia balafon & the Abéné Festival, Senegal"
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
 banner: "alia-abene-banner.jpg"
 previewImage: "alia-abene-preview.jpg"

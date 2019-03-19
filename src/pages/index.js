@@ -21,7 +21,7 @@ class HomePage extends Component {
         />
         <PageBanner
           title="George Smerin"
-          subtitle="I'm a musician and web developer from Bristol, UK."
+          subtitle="Musician and web developer from Bristol, UK"
           banner={banner}
         />
         {/* <KoraFeature /> */}
@@ -42,7 +42,10 @@ export const homePageQuery = graphql`
         }
       }
     }
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 3
+    ) {
       edges {
         node {
           frontmatter {

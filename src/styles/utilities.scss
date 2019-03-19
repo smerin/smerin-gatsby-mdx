@@ -14,10 +14,40 @@ $black: #211a1d;
 $serif: "Merriweather", Georgia, serif;
 $sans: "Muli", Helvetica, Arial, sans-serif;
 
-$desktop: 86.25em; // 1380px
-$laptop: 58.75em; // 980px
-$tablet: 48.75em; // 780px
-$mobile: 28.125em; // 450px
+@mixin h1 {
+  font-family: $serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.125em;
+  margin: 2.5rem 0 1.5rem;
+}
+@mixin h2 {
+  font-family: $serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.25em;
+  margin: 2rem 0 1rem;
+}
+
+@mixin h3 {
+  font-family: $serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.25em;
+  margin: 2rem 0 1.5rem;
+}
+@mixin h4 {
+  font-family: $serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5em;
+  margin: 2rem 0 1rem;
+}
+
+$desktop: 69rem; // 1380px
+$laptop: 49rem; // 980px
+$tablet: 39rem; // 780px
+$mobile: 22.5rem; // 450px
 
 @mixin breakpoint($point) {
   @if $point == desktop {

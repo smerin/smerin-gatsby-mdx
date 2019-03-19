@@ -10,6 +10,8 @@
   background: $turquoise;
   color: $white;
   text-align: left;
+  font-family: $sans;
+  font-size: 1rem;
   line-height: 2rem;
   font-weight: 700;
   transition: all 0.5s ease;
@@ -48,13 +50,13 @@
   }
 
   &:hover {
-    background: $tiffany;
-    color: $white;
+    background: $saffron;
+    color: darken($turquoise, 15%);
     cursor: pointer;
 
     .icon {
       svg {
-        fill: $tiffany;
+        fill: $saffron;
       }
     }
   }
