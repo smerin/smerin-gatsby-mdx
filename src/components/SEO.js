@@ -7,7 +7,6 @@ const SEO = ({
   title,
   titleTemplate,
   description,
-  excerpt,
   image,
   pathname,
   article
@@ -30,7 +29,6 @@ const SEO = ({
         title: title || defaultTitle,
         titleTemplate: titleTemplate || defaultTitleTemplate,
         description: description || defaultDescription,
-        excerpt: excerpt || defaultDescription,
         image: `${siteUrl}${image || defaultImage}`,
         url: `${siteUrl}${pathname || "/"}`
       };
@@ -50,15 +48,15 @@ const SEO = ({
             )}
             {seo.url && <meta property="og:url" content={seo.url} />}
             {seo.image && <meta property="og:image" content={seo.image} />}
-            {seo.excerpt && (
-              <meta property="og:description" content={seo.excerpt} />
+            {seo.description && (
+              <meta property="og:description" content={seo.description} />
             )}
 
             {/* Twitter Card data */}
             <meta name="twitter:card" content="summary_large_image" />
             {seo.title && <meta name="twitter:title" content={seo.title} />}
-            {seo.excerpt && (
-              <meta name="twitter:description" content={seo.excerpt} />
+            {seo.description && (
+              <meta name="twitter:description" content={seo.description} />
             )}
             {twitterUsername && (
               <meta name="twitter:creator" content={twitterUsername} />

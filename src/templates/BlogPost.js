@@ -9,7 +9,9 @@ export default function BlogTemplate({ data, location }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
 
-  const { title, date, banner, seoTitle, seoDescription } = frontmatter;
+  const { title, banner, previewImage, seoTitle, seoDescription } = frontmatter;
+
+  // console.log(previewImage.childImageSharp.fixed.src);
 
   return (
     <Template location={location.pathname}>
@@ -17,6 +19,8 @@ export default function BlogTemplate({ data, location }) {
         title={seoTitle}
         description={seoDescription}
         pathname={location.pathname}
+        image={previewImage.childImageSharp.fixed.src}
+        article
       />
       <div className={style.banner}>
         {banner && (
@@ -46,6 +50,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        previewImage {
+          childImageSharp {
+            fixed(width: 1200, height: 630) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
         banner {
           childImageSharp {
             fluid(maxWidth: 1800) {

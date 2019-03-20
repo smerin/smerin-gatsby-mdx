@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     title: "Standard title",
     titleTemplate: "%s | George Smerin",
-    description: "This is my cool blog",
+    description: "Musician and web developer from Bristol, UK",
     url: "https://www.smerin.com",
     image: "/images/george.jpg",
-    twitterUsername: "@georgesmerin"
+    twitterUsername: "@smerindigital"
   },
   plugins: [
     "gatsby-transformer-sharp",
