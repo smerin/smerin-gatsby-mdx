@@ -1,16 +1,72 @@
 ---
-path: "/blog/watcha"
+path: "/watcha-jola-akonting-kamale-ngoni"
 date: "2019-03-18"
-title: "Watcha plays Jola akonting and kamele ngoni"
-excerpt: "Watcha plays the akonting and kamele ngoni, and sings in Jola and French. I filmed an intimate concert outside his home in Kafountine, Senegal."
+title: "Watcha plays Jola akonting and kamale ngoni"
+excerpt: "Watcha plays the akonting and kamale ngoni, and sings in Jola and French. I filmed an intimate concert outside his home in Kafountine, Senegal."
 banner: "watcha-banner.jpg"
 previewImage: "watcha-preview.jpg"
 seoTitle: "Watcha plays Jola akonting and kamele ngoni"
-seoDescription: "Watcha plays the akonting and kamele ngoni, and sings in Jola and French. I filmed an intimate concert outside his home in Kafountine, Senegal."
+seoDescription: "Watcha plays the akonting and kamale ngoni, and sings in Jola and French. I filmed an intimate concert outside his home in Kafountine, Senegal."
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Watcha plays the akonting and kamale ngoni, and sings in Jola and French. I filmed an intimate concert outside his home in Kafountine, Senegal.
+
+The first 7 songs below are played on the akonting. Songs from number 8 onwards are played on the kamale ngoni.
+
+### 1. Africa
+
+`youtube:https://www.youtube.com/embed/nbxk3oulOf4`
+
+---
+
+### 2. Koto Khady
+
+`youtube:https://www.youtube.com/embed/QvCdb4UZaGU`
+
+---
+
+### 3. Basungouté
 
 `youtube:https://www.youtube.com/embed/ilmEnS68qJg`
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+---
+
+### 4. Maimuna
+
+`youtube:https://www.youtube.com/embed/XQaKaKWiCfk`
+
+---
+
+### 5. Kaya Kaite Katama
+
+`youtube:https://www.youtube.com/embed/HdlkSU6e2RM`
+
+---
+
+### 6. Laye Diata
+
+`youtube:https://www.youtube.com/embed/IJtI7gr4XyU`
+
+---
+
+### 7. Esouk Elobeh
+
+`youtube:https://www.youtube.com/embed/RTBLN-UE5ZM`
+
+---
+
+### 8. La Paix de l’Afrique
+
+`youtube:https://www.youtube.com/embed/1PNjfxT5mxw`
+
+---
+
+### 9. Djina Bantan
+
+`youtube:https://www.youtube.com/embed/W0O_6kmUMws`
+
+---
+
+### 10. Coulinoum Djibon Ketoum
+
+`youtube:https://www.youtube.com/embed/1wg1XhgSxYw`

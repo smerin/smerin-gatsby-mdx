@@ -24,11 +24,14 @@ h6 {
 
 hr {
   margin: 2rem 0;
+  border: 0;
+  border-top: 10px solid #eee;
 }
 
 p {
   font-size: 1rem;
   line-height: 1.5em;
+  letter-spacing: -0.04em;
   margin: 1rem 0;
 }
 
@@ -49,7 +52,11 @@ li {
 }
 
 strong {
-  font-weight: 900;
+  font-weight: 700;
+}
+
+p a {
+  font-weight: 700;
 }
 
 blockquote {

@@ -31,7 +31,7 @@ export const EmailButton = ({ alt }) => {
     [style.alt]: alt
   });
   return (
-    <a className={className} href="mailto:contact@smerin.com" target="blank">
+    <a className={className} href="mailto:mail@smerin.com" target="_blank">
       <span className={style.icon}>
         <FaEnvelope />
       </span>
@@ -48,7 +48,7 @@ export const LinkedinButton = ({ alt }) => {
     <a
       className={className}
       href="https://uk.linkedin.com/in/smerin"
-      target="blank"
+      target="_blank"
     >
       <span className={style.icon}>
         <FaLinkedin />
@@ -66,7 +66,7 @@ export const TwitterButton = ({ alt }) => {
     <a
       className={className}
       href="https://twitter.com/smerindigital"
-      target="blank"
+      target="_blank"
     >
       <span className={style.icon}>
         <FaTwitter />
@@ -84,7 +84,7 @@ export const InstagramButton = ({ alt }) => {
     <a
       className={className}
       href="https://www.instagram.com/smerin/"
-      target="blank"
+      target="_blank"
     >
       <span className={style.icon}>
         <FaInstagram />
@@ -102,7 +102,7 @@ export const YoutubeButton = ({ alt }) => {
     <a
       className={className}
       href="https://www.youtube.com/channel/UClXTgDt-_ZWXrvljBFB1f3A"
-      target="blank"
+      target="_blank"
     >
       <span className={style.icon}>
         <FaYoutube />
@@ -120,7 +120,7 @@ export const FacebookButton = ({ alt }) => {
     <a
       className={className}
       href="https://www.facebook.com/smerin"
-      target="blank"
+      target="_blank"
     >
       <span className={style.icon}>
         <FaFacebook />

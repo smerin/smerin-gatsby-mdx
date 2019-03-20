@@ -30,10 +30,12 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-embed-youtube",
+            resolve: "gatsby-remark-embed-video",
             options: {
               width: 800,
-              height: 450
+              height: 450,
+              related: false,
+              noIframeBorder: true
             }
           },
           "gatsby-remark-responsive-iframe"

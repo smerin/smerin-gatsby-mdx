@@ -32,8 +32,14 @@ const Footer = () => {
           </div>
         )} */}
         <div className={style.credits}>
-          This website built with ❤️ in <a href="https://reactjs.org/">React</a>{" "}
-          &amp; <a href="https://www.gatsbyjs.org/">Gatsby</a>
+          This website built with ❤️ in{" "}
+          <a href="https://reactjs.org/" target="_blank">
+            React
+          </a>{" "}
+          &amp;{" "}
+          <a href="https://www.gatsbyjs.org/" target="_blank">
+            Gatsby
+          </a>
         </div>
       </div>
     </footer>
