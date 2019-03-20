@@ -32,6 +32,14 @@
     font-size: 1rem;
     line-height: 1.25em;
     margin: 1rem 0 0.25rem;
+
+    a {
+      color: $charcoal;
+
+      &:hover {
+        color: $turquoise;
+      }
+    }
   }
   p {
     font-size: 0.875rem;
