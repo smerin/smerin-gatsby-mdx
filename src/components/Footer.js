@@ -33,11 +33,11 @@ const Footer = () => {
         )} */}
         <div className={style.credits}>
           This website built with ❤️ in{" "}
-          <a href="https://reactjs.org/" target="_blank">
+          <a href="https://reactjs.org/" target="_blank" rel="noopener">
             React
           </a>{" "}
           &amp;{" "}
-          <a href="https://www.gatsbyjs.org/" target="_blank">
+          <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener">
             Gatsby
           </a>
         </div>

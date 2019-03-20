@@ -49,6 +49,7 @@ export const LinkedinButton = ({ alt }) => {
       className={className}
       href="https://uk.linkedin.com/in/smerin"
       target="_blank"
+      rel="noopener"
     >
       <span className={style.icon}>
         <FaLinkedin />
@@ -67,6 +68,7 @@ export const TwitterButton = ({ alt }) => {
       className={className}
       href="https://twitter.com/smerindigital"
       target="_blank"
+      rel="noopener"
     >
       <span className={style.icon}>
         <FaTwitter />
@@ -85,6 +87,7 @@ export const InstagramButton = ({ alt }) => {
       className={className}
       href="https://www.instagram.com/smerin/"
       target="_blank"
+      rel="noopener"
     >
       <span className={style.icon}>
         <FaInstagram />
@@ -103,6 +106,7 @@ export const YoutubeButton = ({ alt }) => {
       className={className}
       href="https://www.youtube.com/channel/UClXTgDt-_ZWXrvljBFB1f3A"
       target="_blank"
+      rel="noopener"
     >
       <span className={style.icon}>
         <FaYoutube />
@@ -121,6 +125,7 @@ export const FacebookButton = ({ alt }) => {
       className={className}
       href="https://www.facebook.com/smerin"
       target="_blank"
+      rel="noopener"
     >
       <span className={style.icon}>
         <FaFacebook />
