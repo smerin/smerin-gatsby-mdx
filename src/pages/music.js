@@ -10,10 +10,10 @@ class MusicPage extends Component {
 
     return (
       <Template location={this.props.location}>
-        <SEO title="Music" />
+        <SEO title="Guitarist, kora player and world music enthusiast" description="Tutorial videos and articles on guitar, kora and world music. Join me on a journey in discovering music from around the world!" />
         <PageBanner
           title="Music"
-          subtitle="I play guitar and kora, and I love music from all around the world."
+          subtitle="Join me on a journey in discovering music from around the world!"
           banner={banner}
         />
         <div className="container">

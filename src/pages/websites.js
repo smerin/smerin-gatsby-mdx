@@ -13,11 +13,11 @@ class WebsitesPage extends Component {
       <Template location={this.props.location}>
         <SEO
           title="React JS / JavaScript front-end developer in Bristol"
-          description="Front-end developer specialising in React JS, JavaScript, GraphQL and Node JS. Strong UX / UI skills. Available for contract roles in Bristol or remote. Call 07887 868522 or email mail@smerin.com"
+          description="Front-end developer specialising in React JS, JavaScript, Gatsby, GraphQL and Node JS. Strong UX / UI skills. Call 07887 868522 or email mail@smerin.com"
         />
         <PageBanner
-          title="Hello!"
-          subtitle="I'm George Smerin, web developer and musician from Bristol."
+          title="Websites"
+          subtitle="I love building beautiful and user-friendly websites and apps"
           banner={banner}
         />
         <WebsitesContent />

@@ -16,8 +16,9 @@ class HomePage extends Component {
     return (
       <Template location={this.props.location}>
         <SEO
-          title="George Smerin | Musician and web developer"
-          description="I'm George Smerin, web developer and musician from Bristol."
+          title="George Smerin | Musician and web developer from Bristol, UK"
+          titleTemplate="%s"
+          description="Welcome to the website of George Smerin, musician and web developer from Bristol (UK). Read all about my recent adventures in music and technology."
         />
         <PageBanner
           title="George Smerin"

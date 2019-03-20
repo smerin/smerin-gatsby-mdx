@@ -1,12 +1,12 @@
 ---
 path: "/blog/mafu-conteh-gambian-kora-player"
 date: "2019-03-19"
-title: "Mafu Conteh, kora vituoso from The Gambia"
-excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
-banner: "watcha-banner.jpg"
-previewImage: "watcha-preview.jpg"
-seoTitle: "SEO title"
-seoDescription: "SEO description"
+title: "Mafu Conteh, kora virtuoso from The Gambia"
+excerpt: "Mafu is a Jali musician from Brikama, Gambia. I spent a week living with him, learning to play kora and filming some of his unique arrangements."
+banner: "mafu-banner.jpg"
+previewImage: "mafu-preview.jpg"
+seoTitle: "Mafu Conteh, kora virtuoso from The Gambia"
+seoDescription: "Mafu is a Jali musician from Brikama, Gambia. I spent a week living with him, learning to play kora and filming some of his unique arrangements."
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

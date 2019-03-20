@@ -1,12 +1,12 @@
 ---
 path: "/blog/alia"
-date: "2019-01-18"
+date: "2019-03-17"
 title: "Alia balafon & the Abéné Festival, Senegal"
-excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-banner: "alia-abene-banner.jpg"
-previewImage: "alia-abene-preview.jpg"
-seoTitle: "SEO title"
-seoDescription: "SEO description"
+excerpt: "Alia is a djembe and balafon master from Guinea Conakry. We met at the Abéné festival in Senegal and recorded some solo balafon performances."
+banner: "alia-banner.jpg"
+previewImage: "alia-preview.jpg"
+seoTitle: "Alia balafon & the Abéné Festival, Senegal"
+seoDescription: "Alia is a djembe and balafon master from Guinea Conakry. We met at the Abéné festival in Senegal and recorded some solo balafon performances."
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

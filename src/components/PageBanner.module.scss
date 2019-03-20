@@ -2,8 +2,7 @@
 
 .banner {
   position: relative;
-  background: darken($turquoise, 20%);
-  // background: linear-gradient($turquoise, darken($turquoise, 5%));
+  background: $saffron;
   overflow: hidden;
 }
 
@@ -14,7 +13,6 @@
   align-items: center;
   padding: 2rem 0;
   z-index: 100;
-  color: $white;
 
   @include breakpoint(tablet) {
     position: absolute;
@@ -25,11 +23,12 @@
 
 .bannerTitle {
   margin: 0 0 0.5rem;
-  font-size: 2rem;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  font-size: 2.5rem;
 
   @include breakpoint(tablet) {
     margin-top: 2rem;
+    color: $white;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   }
   @include breakpoint(desktop) {
     font-size: 3rem;
@@ -37,11 +36,13 @@
 }
 .bannerSubtitle {
   margin: 0;
+  font-size: 1.25rem;
   line-height: 1.25em;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 
   @include breakpoint(tablet) {
     max-width: 18rem;
+    color: $white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   }
   @include breakpoint(desktop) {
     font-size: 1.5rem;

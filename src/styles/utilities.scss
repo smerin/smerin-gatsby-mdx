@@ -17,9 +17,13 @@ $sans: "Muli", Helvetica, Arial, sans-serif;
 @mixin h1 {
   font-family: $serif;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.125em;
   margin: 2.5rem 0 1.5rem;
+
+  @include breakpoint(tablet) {
+    font-size: 2.5rem;
+  }
 }
 @mixin h2 {
   font-family: $serif;
@@ -44,10 +48,10 @@ $sans: "Muli", Helvetica, Arial, sans-serif;
   margin: 2rem 0 1rem;
 }
 
-$desktop: 69rem; // 1380px
-$laptop: 49rem; // 980px
-$tablet: 39rem; // 780px
-$mobile: 22.5rem; // 450px
+$desktop: 86.25rem; // 1380px
+$laptop: 61.25rem; // 980px
+$tablet: 48.75rem; // 780px
+$mobile: 28.125rem; // 450px
 
 @mixin breakpoint($point) {
   @if $point == desktop {

@@ -10,27 +10,25 @@
   }
 
   li {
-    display: inline-flex;
-    align-items: center;
+    display: inline-block;
     height: 100%;
     margin: 0;
     font-family: $serif;
     font-weight: 700;
-
-    @include breakpoint(desktop) {
-      // margin: 0 1.5rem;
-    }
 
     a {
       display: block;
       color: $charcoal;
       background: transparent;
       height: 100%;
-      padding: 2.5rem 1.5rem;
+      min-width: 8rem;
+      padding: 2.5rem 2rem;
+      text-align: center;
       transition: all 0.5s ease;
 
       &:hover {
-        background: $ice;
+        background: #eee;
+        background: linear-gradient(to bottom, #fff, #eee);
       }
 
       &[aria-current="page"] {
