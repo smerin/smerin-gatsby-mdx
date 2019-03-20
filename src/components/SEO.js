@@ -30,8 +30,10 @@ const SEO = ({
         titleTemplate: titleTemplate || defaultTitleTemplate,
         description: description || defaultDescription,
         image: `${siteUrl}${image || defaultImage}`,
-        url: `${siteUrl}${pathname || "/"}`
+        url: `${siteUrl}${pathname}/`
       };
+
+      console.log(process.env.FB_APP_ID);
 
       return (
         <>
@@ -39,7 +41,7 @@ const SEO = ({
             <link rel="canonical" href={seo.url} />
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
-            <meta property="fb:app_id" content={process.env.FB_APP_ID} />
+            <meta property="fb:app_id" content={process.env.GATSBY_FB_APP_ID} />
 
             {/* Open Graph data */}
             {seo.title && <meta property="og:title" content={seo.title} />}
@@ -48,6 +50,8 @@ const SEO = ({
             )}
             {seo.url && <meta property="og:url" content={seo.url} />}
             {seo.image && <meta property="og:image" content={seo.image} />}
+            {seo.image && <meta property="og:image:width" content={1200} />}
+            {seo.image && <meta property="og:image:height" content={630} />}
             {seo.description && (
               <meta property="og:description" content={seo.description} />
             )}

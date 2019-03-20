@@ -11,8 +11,6 @@ export default function BlogTemplate({ data, location }) {
 
   const { title, banner, previewImage, seoTitle, seoDescription } = frontmatter;
 
-  // console.log(previewImage.childImageSharp.fixed.src);
-
   return (
     <Template location={location.pathname}>
       <SEO
