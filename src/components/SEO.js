@@ -30,7 +30,7 @@ const SEO = ({
         titleTemplate: titleTemplate || defaultTitleTemplate,
         description: description || defaultDescription,
         image: `${siteUrl}${image || defaultImage}`,
-        url: `${siteUrl}${pathname}/`
+        url: `${siteUrl}${pathname ? pathname : ""}/`
       };
 
       console.log(process.env.FB_APP_ID);

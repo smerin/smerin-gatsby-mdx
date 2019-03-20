@@ -19,6 +19,7 @@ class HomePage extends Component {
         <SEO
           title="George Smerin | Musician and web developer from Bristol, UK"
           titleTemplate="%s"
+          pathname=""
           image={previewImage.childImageSharp.fixed.src}
           description="Welcome to the website of George Smerin, musician and web developer from Bristol (UK). Read all about my recent adventures in music and technology."
         />

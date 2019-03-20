@@ -14,6 +14,7 @@ class WebsitesPage extends Component {
         <SEO
           title="React JS / JavaScript front-end developer in Bristol"
           description="Front-end developer specialising in React JS, JavaScript, Gatsby, GraphQL and Node JS. Strong UX / UI skills. Call 07887 868522 or email mail@smerin.com"
+          pathname="/websites"
           image={previewImage.childImageSharp.fixed.src}
         />
         <PageBanner

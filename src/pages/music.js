@@ -13,6 +13,7 @@ class MusicPage extends Component {
         <SEO
           title="Guitarist, kora player and world music enthusiast"
           description="Tutorial videos and articles on guitar, kora and world music. Join me on a journey in discovering music from around the world!"
+          pathname="/music"
           image={previewImage.childImageSharp.fixed.src}
         />
         <PageBanner
