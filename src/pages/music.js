@@ -6,13 +6,14 @@ import PageBanner from "../components/PageBanner";
 
 class MusicPage extends Component {
   render() {
-    const { banner } = this.props.data;
+    const { banner, previewImage } = this.props.data;
 
     return (
       <Template location={this.props.location}>
         <SEO
           title="Guitarist, kora player and world music enthusiast"
           description="Tutorial videos and articles on guitar, kora and world music. Join me on a journey in discovering music from around the world!"
+          image={previewImage.childImageSharp.fixed.src}
         />
         <PageBanner
           title="Music"
@@ -77,6 +78,13 @@ export const musicBannerQuery = graphql`
       childImageSharp {
         fluid(maxWidth: 2400) {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    previewImage: file(relativePath: { eq: "preview/music-preview.jpg" }) {
+      childImageSharp {
+        fixed(width: 1200, height: 630) {
+          ...GatsbyImageSharpFixed
         }
       }
     }

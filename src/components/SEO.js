@@ -45,13 +45,14 @@ const SEO = ({
 
             {/* Open Graph data */}
             {seo.title && <meta property="og:title" content={seo.title} />}
-            {(article ? true : null) && (
-              <meta property="og:type" content="article" />
-            )}
+            <meta
+              property="og:type"
+              content={article ? "article" : "website"}
+            />
             {seo.url && <meta property="og:url" content={seo.url} />}
             {seo.image && <meta property="og:image" content={seo.image} />}
-            {seo.image && <meta property="og:image:width" content={1200} />}
-            {seo.image && <meta property="og:image:height" content={630} />}
+            {/* {seo.image && <meta property="og:image:width" content={1200} />}
+            {seo.image && <meta property="og:image:height" content={630} />} */}
             {seo.description && (
               <meta property="og:description" content={seo.description} />
             )}

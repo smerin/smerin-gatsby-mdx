@@ -6,7 +6,7 @@ import style from "./PostGrid.module.scss";
 const PostGrid = ({ title, posts }) => {
   const defaultPreviewImage = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "default-preview.jpg" }) {
+      image: file(relativePath: { eq: "preview/default-preview.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid

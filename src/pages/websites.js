@@ -7,13 +7,14 @@ import WebsitesContent from "../components/WebsitesContent";
 
 class WebsitesPage extends Component {
   render() {
-    const { banner } = this.props.data;
+    const { banner, previewImage } = this.props.data;
 
     return (
       <Template location={this.props.location}>
         <SEO
           title="React JS / JavaScript front-end developer in Bristol"
           description="Front-end developer specialising in React JS, JavaScript, Gatsby, GraphQL and Node JS. Strong UX / UI skills. Call 07887 868522 or email mail@smerin.com"
+          image={previewImage.childImageSharp.fixed.src}
         />
         <PageBanner
           title="Websites"
@@ -34,6 +35,13 @@ export const websitesBannerQuery = graphql`
       childImageSharp {
         fluid(maxWidth: 3600) {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    previewImage: file(relativePath: { eq: "preview/websites-preview.jpg" }) {
+      childImageSharp {
+        fixed(width: 1200, height: 630) {
+          ...GatsbyImageSharpFixed
         }
       }
     }

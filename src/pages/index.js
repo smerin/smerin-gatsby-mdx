@@ -10,6 +10,7 @@ class HomePage extends Component {
   render() {
     const {
       banner,
+      previewImage,
       allMarkdownRemark: { edges: posts }
     } = this.props.data;
 
@@ -18,6 +19,7 @@ class HomePage extends Component {
         <SEO
           title="George Smerin | Musician and web developer from Bristol, UK"
           titleTemplate="%s"
+          image={previewImage.childImageSharp.fixed.src}
           description="Welcome to the website of George Smerin, musician and web developer from Bristol (UK). Read all about my recent adventures in music and technology."
         />
         <PageBanner
@@ -40,6 +42,13 @@ export const homePageQuery = graphql`
       childImageSharp {
         fluid(maxWidth: 3600) {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    previewImage: file(relativePath: { eq: "preview/home-preview.jpg" }) {
+      childImageSharp {
+        fixed(width: 1200, height: 630) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
