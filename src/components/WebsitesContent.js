@@ -12,7 +12,7 @@ const WebsitesContent = () => (
   <div className="container">
     <div className="content">
       <h1 className={style.title}>
-        JavaScript UI developer from Bristol, specializing in React JS.
+        JavaScript UI developer from Bristol, specialising in React JS.
       </h1>
       <p>
         I've been designing and building websites professionally for over 12
@@ -41,7 +41,7 @@ const WebsitesContent = () => (
 
       <h2 className={style.skillsTitle}>My key skills &amp; interests</h2>
       <p>
-        I love learning and am fasinated by how quickly the JavaScript ecosystem
+        I love learning and am fascinated by how quickly the JavaScript ecosystem
         is developing. Below are some of the technologies I have been using
         recently.
       </p>
