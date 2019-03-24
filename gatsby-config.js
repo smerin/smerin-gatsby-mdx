@@ -70,7 +70,8 @@ module.exports = {
         start_url: "/",
         background_color: "#333333",
         theme_color: "#00a6cc",
-        icon: "src/images/icon.png"
+        icon: "src/images/icon.png",
+        display: "fullscreen"
       }
     },
     "gatsby-plugin-offline"
