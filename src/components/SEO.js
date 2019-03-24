@@ -33,8 +33,6 @@ const SEO = ({
         url: `${siteUrl}${pathname ? pathname : ""}/`
       };
 
-      console.log(process.env.FB_APP_ID);
-
       return (
         <>
           <Helmet title={seo.title} titleTemplate={seo.titleTemplate}>

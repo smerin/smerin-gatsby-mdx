@@ -22,8 +22,6 @@ const PostGrid = ({ title, posts }) => {
         {title && <h2>{title}</h2>}
         <ul>
           {posts.map((post, index) => {
-            console.log(post);
-
             const {
               path,
               title,

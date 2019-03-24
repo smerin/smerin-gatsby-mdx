@@ -61,6 +61,18 @@ module.exports = {
       options: {
         lang: "en"
       }
-    }
+    },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "smerin.com",
+        short_name: "smerin.com",
+        start_url: "/",
+        background_color: "#333333",
+        theme_color: "#00a6cc",
+        icon: "src/images/icon.png"
+      }
+    },
+    "gatsby-plugin-offline"
   ]
 };
