@@ -6,7 +6,7 @@ const PageBanner = ({ title, subtitle, banner }) => {
   return (
     <div className={style.banner}>
       {banner && (
-        <Img fluid={banner.childImageSharp.fluid} />
+        <Img fluid={banner.childImageSharp.fluid} alt={title} />
       )}
       <div className={style.bannerContent}>
         <div className="container">
