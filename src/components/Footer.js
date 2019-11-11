@@ -19,7 +19,7 @@ const Footer = () => {
         <div className={style.buttons}>
           <h3>Elsewhere on the web...</h3>
           <YoutubeButton />
-          {/* <FacebookButton /> */}
+          <FacebookButton />
           <InstagramButton />
           <EmailButton />
         </div>

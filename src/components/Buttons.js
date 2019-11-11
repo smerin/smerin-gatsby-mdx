@@ -104,7 +104,7 @@ export const YoutubeButton = ({ alt }) => {
   return (
     <a
       className={className}
-      href="https://www.youtube.com/channel/UClXTgDt-_ZWXrvljBFB1f3A"
+      href="https://www.youtube.com/smerin"
       target="_blank"
       rel="noopener"
     >

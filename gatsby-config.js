@@ -13,12 +13,6 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-sharp",
     {
-      resolve: "gatsby-mdx",
-      options: {
-        extensions: [".mdx", ".md"]
-      }
-    },
-    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "blog",

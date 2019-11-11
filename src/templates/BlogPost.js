@@ -4,6 +4,7 @@ import SEO from "../components/SEO";
 import Img from "gatsby-image";
 import Template from "../components/Template";
 import style from "./BlogPost.module.scss";
+import MailchimpForm from "../components/Mailchimp";
 
 export default function BlogTemplate({ data, location }) {
   const { markdownRemark } = data;
@@ -36,6 +37,8 @@ export default function BlogTemplate({ data, location }) {
           />
         </div>
       </div>
+
+      {/* <MailchimpForm /> */}
     </Template>
   );
 }

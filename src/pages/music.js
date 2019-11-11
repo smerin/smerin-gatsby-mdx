@@ -26,9 +26,20 @@ class MusicPage extends Component {
             <h1>Guitarist &amp; kora player</h1>
             <p>
               I'm on a life-long mission to learn to play the guitar and (more
-              recently) the kora, a type of harp from West Africa. I'm about to
-              start documenting my progress and passing on the things I have
-              learnt right here, so check back soon for updates.
+              recently) the Kora, a type of harp from West Africa. You can see
+              videos of my playing and get the latest updates on{" "}
+              <a href="http://www.facebook.com/smerin" target="_blank">
+                Facebook
+              </a>
+              ,{" "}
+              <a href="http://www.youtube.com/smerin" target="_blank">
+                YouTube
+              </a>{" "}
+              and{" "}
+              <a href="http://www.instagram.com/smerin" target="_blank">
+                Instagram
+              </a>
+              .
             </p>
             <h2>My story...</h2>
             <p>
