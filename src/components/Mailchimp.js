@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import style from "./Mailchimp.module.scss";
 
-class Mailchimp extends Component {
+export class Mailchimp extends Component {
   state = {
     email: "",
     submitting: false
@@ -48,7 +48,12 @@ class Mailchimp extends Component {
         <form className={style.form} onSubmit={e => this.handleSubmit(e)}>
           <fieldset disabled={submitting}>
             <div className={style.inputs}>
-              <input name="email" value={email} onChange={this.saveToState} />
+              <input
+                name="email"
+                value={email}
+                onChange={this.saveToState}
+                placeholder="Enter email..."
+              />
               <button type="submit">
                 <FaPaperPlane />
               </button>

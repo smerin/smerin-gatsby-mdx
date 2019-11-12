@@ -1,10 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
-import SEO from "../components/SEO";
 import Img from "gatsby-image";
-import Template from "../components/Template";
+import { Template, SEO, ContentFeature, Mailchimp } from "../components";
 import style from "./BlogPost.module.scss";
-import MailchimpForm from "../components/Mailchimp";
 
 export default function BlogTemplate({ data, location }) {
   const { markdownRemark } = data;
@@ -35,10 +33,17 @@ export default function BlogTemplate({ data, location }) {
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
+          <ContentFeature>
+            <h3>Monthly newsletter</h3>
+            <p>
+              I’d love to send you my latest posts, music and videos in a
+              monthly email. Guaranteed no spam and you can unsubscribe at any
+              time.
+            </p>
+            <Mailchimp />
+          </ContentFeature>
         </div>
       </div>
-
-      {/* <MailchimpForm /> */}
     </Template>
   );
 }

@@ -7,31 +7,6 @@
 .title {
   @include h2;
 }
-.contactSection {
-  position: relative;
-  left: -1rem;
-  width: calc(100% + 2rem);
-  margin: 2em 0 4rem;
-  padding: 2rem 2rem 1rem;
-  background: $plum;
-  color: $white;
-  border-left: 1rem solid darken($plum, 10%);
-
-  p {
-    max-width: 32rem;
-    margin-top: 0;
-  }
-
-  a {
-    margin-left: 0;
-  }
-
-  @include breakpoint(laptop) {
-    left: -2rem;
-    width: calc(100% + 4rem);
-    border-width: 2rem;
-  }
-}
 
 .skillsItem {
   position: relative;

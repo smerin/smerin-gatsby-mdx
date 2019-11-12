@@ -8,7 +8,7 @@ import { menuItems } from "../utils/menuItems";
 import "typeface-merriweather";
 import "typeface-muli";
 
-const Template = ({ children }) => {
+export const Template = ({ children }) => {
   return (
     <div>
       <Menu width={300} right>

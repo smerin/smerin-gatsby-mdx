@@ -2,6 +2,7 @@ import React from "react";
 import style from "./WebsitesContent.module.scss";
 import { FaLinkedin, FaEnvelope, FaTwitter } from "react-icons/fa";
 import { EmailButton, LinkedinButton, TwitterButton } from "./Buttons";
+import { ContentFeature } from "./ContentFeature";
 import reactIcon from "../images/icons/react-icon.svg";
 import reduxIcon from "../images/icons/redux-icon.svg";
 import graphqlIcon from "../images/icons/graphql-icon.svg";
@@ -27,23 +28,22 @@ const WebsitesContent = () => (
         but if you'd like some examples I can point you in the right direction.
       </p>
 
-      <div className={style.contactSection}>
+      <ContentFeature>
         <p>
           If you are interested in hiring me for a project, please get in touch:
         </p>
-
         <div className="button-group">
           <EmailButton alt />
           <LinkedinButton alt />
           <TwitterButton alt />
         </div>
-      </div>
+      </ContentFeature>
 
       <h2 className={style.skillsTitle}>My key skills &amp; interests</h2>
       <p>
-        I love learning and am fascinated by how quickly the JavaScript ecosystem
-        is developing. Below are some of the technologies I have been using
-        recently.
+        I love learning and am fascinated by how quickly the JavaScript
+        ecosystem is developing. Below are some of the technologies I have been
+        using recently.
       </p>
 
       <div className={style.skillsItem}>
