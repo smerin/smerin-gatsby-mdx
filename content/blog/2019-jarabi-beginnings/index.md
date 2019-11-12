@@ -1,7 +1,7 @@
 ---
-path: "/jarabi-learning-kora-part-one"
+path: "/kora-journey-part-one-jarabi"
 date: "2019-11-12"
-title: "Learning to play the kora, part one: Jarabi"
+title: "My kora journey, part one: Jarabi"
 excerpt: "Jarabi is a love song of the Mandinka people. It was the first song I learnt on the kora. Here's how I started out learning to play this beautiful instrument."
 banner: "jarabi-banner.jpg"
 previewImage: "jarabi-preview.jpg"
